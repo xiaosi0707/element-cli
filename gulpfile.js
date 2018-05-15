@@ -26,7 +26,6 @@ gulp.task('copyHtml', function () {
     gulp.src('./index.html')
         .pipe(gulp.dest('./dist'))
 })
-// html监听
 // sass监听
 gulp.task('sassWatch', function () {
     gulp.watch('./src/assets/css/**/*.scss', ['sassTask'])
