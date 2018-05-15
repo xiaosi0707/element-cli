@@ -1,0 +1,12 @@
+{
+  "browserify": true,
+  "devel": true,
+  "indent": 4,
+   "strict": true,
+  "loopfunc": true,
+  "camelcase": true,
+  "browser": true,
+  "unused": true, // 所有的变量必须都被使用
+  "browserify": true,
+  "predef": ["angular", "Swiper", "Hammer", "_hmt", "tbridge"]
+}

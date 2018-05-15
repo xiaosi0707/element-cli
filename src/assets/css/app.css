@@ -1,0 +1,83 @@
+/*
+Error: Invalid CSS after "  margin: ": expected expression (e.g. 1px, bold), was ";"
+        on line 6 of other/index.scss
+        from line 2 of app.scss
+
+1: html, body {
+2:   width: 100%;
+3:   height: 100%;
+4:   background: green;
+5:   padding: 0;
+6:   margin: ;
+7: }
+8: .demo {
+9:   width: 200px;
+10:   height: 200px;
+11:   line-height: 200px;
+
+Backtrace:
+other/index.scss:6
+app.scss:2
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1278:in `expected'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/script/lexer.rb:231:in `expected!'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/script/parser.rb:724:in `assert_expr'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/script/parser.rb:68:in `parse'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1134:in `sass_script'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:988:in `value!'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:796:in `block in try_declaration'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1254:in `rethrow'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:809:in `try_declaration'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:697:in `block_child'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:689:in `block_contents'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:678:in `block'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:670:in `ruleset'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:696:in `block_child'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:686:in `block_contents'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:137:in `stylesheet'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:41:in `parse'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:414:in `_to_tree'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:321:in `to_tree'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:88:in `block in with_import'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:88:in `with_import'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin.rb:82:in `update_stylesheets'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:51:in `process_result'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
+D:/path/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/bin/scss:13:in `<top (required)>'
+D:/path/Ruby23-x64/bin/scss:22:in `load'
+D:/path/Ruby23-x64/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  margin: \": expected expression (e.g. 1px, bold), was \";\"\A         on line 6 of other/index.scss\A         from line 2 of app.scss\A \A 1: html, body {\A 2:   width: 100%;\A 3:   height: 100%;\A 4:   background: green;\A 5:   padding: 0;\A 6:   margin: ;\A 7: }\A 8: .demo {\A 9:   width: 200px;\A 10:   height: 200px;\A 11:   line-height: 200px;"; }
